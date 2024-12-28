@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #f0f4f8; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Todo Header */
+.todo-header {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.todo-header i {
+    font-size: 24px;
+    color: black; /* Blue icon */
+    margin-right: 10px;
+}
+
+.todo-header h1 {
+    font-size: 30px;
+    color: black; /* Blue text */
+}
+
+/* Add Task Section */
+.add-task {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.add-task input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    padding: 10px;
+}
+
+.add-task input::placeholder {
+    color: #aaa;
+}
+
+.add-task .fa-plus {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#8E2DE2,#4A00E0);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.add-task .fa-plus:hover {
+    background: #4A00E0; /* Darker blue on hover */
+}
+
+
+/* Task Item */
+
+#taskList {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 900px;
+    list-style: none;
+    padding: 0;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+
+.taskInput {
+    width:20px;
+    height: 20px;
+}
+
+.taskDate {
+    font-size: 0.8rem;  
+    color: #888; 
+}
+
+.operation .fa-pen-to-square{
+    size:30px;
+    color: #8E2DE2;
+    margin: 0 10px;
+    cursor: pointer;
+    
+}
+
+.operation .fa-trash{
+    size :30px;
+    color: black;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 20px; /* Bigger checkbox */
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px; /* Add some space to the right of the checkbox */
+}
+
+.task.completed{
+    text-decoration-line: line-through;
+    color: #8E2DE2;
+}
+
+

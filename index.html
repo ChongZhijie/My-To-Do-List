@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale = 1">
+    <title>To Do Task List</title>
+    
+    <!--call style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--call fontawesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Todo Title Section -->
+        <div class="todo-header">
+            <i class="fa-solid fa-check-circle"></i>
+            <h1>My To Do List</h1>
+        </div>
+
+        <!-- Add Task Section -->
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Add new task...">
+            <input type="date" id="dateInput">
+            <i class="fa-solid fa-plus" id="addButton"></i>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
